@@ -34,11 +34,11 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     compress: {
-                        drop_console: true
+                        // drop_console: true
                     }
                 },
                 files: [{
-                    "dist/js/style.min.js": ["src/js/**/*.js"]
+                    "dist/js/main.min.js": ["src/js/main/*.js"]
                 }]
             }
         },
