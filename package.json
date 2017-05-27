@@ -1,0 +1,33 @@
+{
+  "name": "unleashdevices-template",
+  "version": "1.0.0",
+  "description": "Site Layout",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-image": "^2.3.0",
+    "lite-server": "^2.3.0",
+    "load-grunt-tasks": "^3.5.2"},
+  "scripts": {
+    "start": "concurrently \"grunt\" \"npm start lite\"",
+    "lite" : "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BotsolveLabs/unleashDevices-template.git"
+  },
+  "authors": [
+    "Pankaj Chauhan <pankaj@botsolve.com>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BotsolveLabs/unleashDevices-template/issues"
+  },
+  "homepage": "https://github.com/BotsolveLabs/unleashDevices-template#readme"
+}

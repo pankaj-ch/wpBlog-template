@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    
+    head
+        title Unleash Devices
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        // favicon
+        link(rel="icon", href="img/favicon.png", type="image/png")        
+        // bootstrap 3.3.7
+        link(href="components/bootstrap/dist/css/bootstrap.min.css", rel="stylesheet")  
+    
+        block head 
+        
+        // brew stylesheet
+        link(href="css/style.css", rel="stylesheet")     
+    
+    body.fixed
+
+        block content  
+        
+        // jquery 3.2.1
+        script(src="components/jquery/dist/jquery.min.js")
+        // bootstrap 3.3.7
+        script(src="components/bootstrap/dist/js/bootstrap.min.js")
+        
+        block script
+        
+        // bootstrap 3.3.7
+        script(src="js/main.js")
+
+        

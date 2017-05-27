@@ -1,0 +1,31 @@
+{
+  "name": "unleashdevices-template",
+  "version": "1.0.0",
+  "description": "Site Layout",
+  "main": "Gruntfile.js",
+  "authors": [
+    "Pankaj Chauhan <pankaj@botsolve.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "sass",
+    "js",
+    "html",
+    "theme",
+    "bootstrap",
+    "responsive"
+  ],
+  "homepage": "https://github.com/BotsolveLabs/Brew-panel",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "antimoderate": "*"
+  }
+}
