@@ -22,16 +22,17 @@ coverage
 
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
+.sass-cache
 
 # Bower dependency directory (https://bower.io/)
 bower_components
-src/img
 
 # node-waf configuration
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
+src/img
 
 # Dependency directories
 node_modules/

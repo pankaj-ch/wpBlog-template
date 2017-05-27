@@ -7,12 +7,12 @@ module.exports = function (grunt) {
             compile: {
                 options: {
                     client: false,
-                    pretty: true
+                    // pretty: true
                 },
                 files: [{
                     cwd: "src/template",
                     src: ["**/*.jade", "!**/_*.jade", "!layouts/**/*.jade"],
-                    dest: "./",
+                    dest: "./dist",
                     expand: true,
                     ext: ".html"
                 }]
@@ -20,14 +20,6 @@ module.exports = function (grunt) {
         },
 
         sass: {
-            production: {
-                options: {
-                    style: "expanded"
-                },
-                files: [{
-                    "dist/css/style.css": "src/css/.sass"
-                }]
-            },
             dist: {
                 options: {
                     style: "compressed"
@@ -35,13 +27,6 @@ module.exports = function (grunt) {
                 files: [{
                     "dist/css/style.min.css": "src/css/style.sass"
                 }]
-            }
-        },
-
-        concat: {
-            production: {
-                src: ["src/**/*.js"],
-                dest: "dist/js/main.js",
             }
         },
 
@@ -74,10 +59,6 @@ module.exports = function (grunt) {
                 files: ["src/**/*.jade"],
                 tasks: ["pug"]
             },
-            js: {
-                files: ["src/**/*.js"],
-                tasks: ["concat"]
-            },
             uglify: {
                 files: ["src/**/*.js"],
                 tasks: ["uglify"]
@@ -93,7 +74,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask("production", ["sass:production", "concat", "pug"]);
-    grunt.registerTask("default", ["production", "watch"]);
+    grunt.registerTask("build", ["sass", "uglify", "pug"]);
+    grunt.registerTask("default", ["build", "watch"]);
 
 };
