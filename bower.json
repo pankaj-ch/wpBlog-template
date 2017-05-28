@@ -27,6 +27,7 @@
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1",
     "antimoderate": "*",
-    "owl.carousel": "^2.2.1"
+    "owl.carousel": "^2.2.1",
+    "okaynav": "^2.0.4"
   }
 }
