@@ -7,7 +7,7 @@ header
             .head-logo
               a.logo(href='#home')
                 img(src='img/logo.png', alt='Unleash Devices', height='64')
-            .head-nav
+            .head-nav.hidden-sm.hidden-xs
               a(href='#latest')
                 | LATEST
                 span Posts
@@ -20,8 +20,50 @@ header
               a(href='#trending')
                 | TRENDING
                 span Posts
-            .head-bookmark
+            .head-bookmark.hidden-md
               a.btn(href='#') Bookmark Hot
       .row
         .col-md-12
           .top-nav
+            .menu-left
+              .toggle-bar
+                a(href="#") T
+            .menu-left                         
+              nav#nav-main(role='navigation')
+                ul.sf-menu
+                  li
+                    a(href='#') Home
+                  li
+                    a(href='#') Shop
+                  li
+                    a(href='#') Blog
+                  li
+                    a(href='#') Services
+                  li
+                    a(href='#') Contacts
+                  li
+                    a(href='#') About us
+                  li
+                    a(href='#') Testimonials
+    
+            .menu-right
+              .search
+                a(href="") S
+
+            .menu-right
+              ul.social
+                li
+                  a(href='#') T
+                    i.ic-twitter
+                li
+                  a(href='#') F
+                    i.ic-facebook
+                li
+                  a(href='#') I
+                    i.ic-instagram
+                li
+                  a(href='#') Y
+                    i.ic-youtube-play
+                li
+                  a(href='#') G
+                    i.ic-google-plus
