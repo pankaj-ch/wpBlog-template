@@ -28,6 +28,7 @@
     "jquery": "^3.2.1",
     "antimoderate": "*",
     "owl.carousel": "^2.2.1",
-    "superfish": "^1.7.9"
+    "superfish": "^1.7.9",
+    "Ionicons": "ionicons#^2.0.1"
   }
 }

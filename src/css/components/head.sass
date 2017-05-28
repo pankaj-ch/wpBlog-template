@@ -11,7 +11,7 @@
     padding: 0px 0px 0px 15px
     text-align: right
     .btn
-      font-weight: 600
+      font-weight: 700
       padding: 8px 20px 8px 20px
       text-transform: uppercase
 
@@ -30,6 +30,8 @@
       font-weight: 400 
 
 .top-nav
+  [class*="ion-"]
+    font-size: 17px
   ul, .search, .toggle-bar
     background-color: whitesmoke
     border-radius: 25px
@@ -43,23 +45,25 @@
 .menu-left
   display: inline-block
   .toggle-bar
-    padding: 0 15px
+    padding: 12px 17px
     margin-right: 10px
   li
     margin: 0 15px
+    a
+      text-transform: uppercase
+      padding: 15px 0
+      font-size: 13px
     a:after
       background: #2196F3
-  a
-    text-transform: uppercase
-    padding: 15px 0
-    font-size: 13px
     
 
 .menu-right
   float: right !important
   .social
     a
-      padding: 15px 7px
+      padding: 12px 10px
+      &:hover,&:focus,&:active
+        opacity: .7
   .search
-    padding: 15px
+    padding: 12px 18px
     margin-left: 10px 
