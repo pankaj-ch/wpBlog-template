@@ -13,10 +13,11 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-image": "^2.3.0",
     "lite-server": "^2.3.0",
-    "load-grunt-tasks": "^3.5.2"},
+    "load-grunt-tasks": "^3.5.2"
+  },
   "scripts": {
     "start": "concurrently \"grunt\" \"npm run lite\"",
-    "lite" : "lite-server"
+    "lite": "lite-server"
   },
   "repository": {
     "type": "git",

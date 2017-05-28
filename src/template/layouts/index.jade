@@ -18,7 +18,8 @@ html(lang="en")
         // brew stylesheet
         link(href="css/style.min.css", rel="stylesheet")     
     
-    body.fixed
+    body
+        include ./header.jade
 
         block content  
         
@@ -28,6 +29,8 @@ html(lang="en")
         script(src="components/bootstrap/dist/js/bootstrap.min.js")
         // antimoderate
         script(src="components/antimoderate/antimoderate.min.js")
+        // owl carousel
+        script(src="components/owl.carousel/dist/owl.carousel.min.js")
         
         block script
         
