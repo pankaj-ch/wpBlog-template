@@ -23,12 +23,10 @@ html(lang="en")
         link(href="css/style.min.css", rel="stylesheet")     
     
     body
-        .sidebar-menu
         .content-wrapper
             include ./header.jade
-
-            block content  
-        
+            block content 
+            include ./footer.jade
         // jquery 3.2.1
         script(src="js/jquery.min.js")
         // bootstrap 3.3.7
