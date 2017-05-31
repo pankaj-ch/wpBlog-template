@@ -11,7 +11,7 @@ $(document).ready(function () {
   $('.sidebar-menu').html(social + menu + close);
 
   // opens sidebar-menu
-  $('.toggle-bar a').click(function(){
+  $('.toggle-bar').click(function(){
     $('body').addClass('menu-open');
   });
 

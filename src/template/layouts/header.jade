@@ -1,71 +1,63 @@
-header
-  .header-wrap
-    .container
-      .row
-        .col-md-12
-          .head
-            .head-logo
-              a.logo(href='#home')
-                img(src='img/logo.png', alt='Unleash Devices', height='64')
-            .head-nav.hidden-sm.hidden-xs
-              a(href='#latest')
-                | LATEST
-                span Posts
-              a(href='#popular')
-                | POPULAR
-                span Posts
-              a(href='#hot')
-                | HOT
-                span Posts
-              a(href='#trending')
-                | TRENDING
-                span Posts
-            .head-bookmark.hidden-md
-              a.btn(href='#') Bookmark Hot
-      .row
-        .col-md-12
-          .top-nav
-            .menu-left
-              .toggle-bar
-                a(href="#")
-                  i.ion-navicon-round
-            .menu-left#nav-main.hidden-sm.hidden-xs                         
-              nav(role='navigation')
-                ul.sf-menu
-                  li
-                    a(href='#') Home
-                  li
-                    a(href='#') Shop
-                  li
-                    a(href='#') Blog
-                  li
-                    a(href='#') Services
-                  li
-                    a(href='#') Contacts
-                  li
-                    a(href='#') About us
-                  li
-                    a(href='#') Testimonials
-    
-            .menu-right
-              .search
-                a(href="")
-                  i.ion-search
+header.container
+  .row
+    .col-md-12.head
+      .head-logo
+        a.logo(href='#home')
+          img(src='img/logo.png', alt='Unleash Devices', height='64')
+      .head-nav.hidden-sm.hidden-xs
+        a(href='#latest')
+          | LATEST
+          span Posts
+        a(href='#popular')
+          | POPULAR
+          span Posts
+        a(href='#hot')
+          | HOT
+          span Posts
+        a(href='#trending')
+          | TRENDING
+          span Posts
+      .head-bookmark.hidden-md
+        a.btn(href='#') Bookmark Hot
+  
+  .row
+    .col-md-12.top-nav
+      #nav-main.hidden-sm.hidden-xs                         
+        nav(role='navigation')
+          ul.sf-menu
+            li
+              a(href='#') Home
+            li
+              a(href='#') Shop
+            li
+              a(href='#') Blog
+            li
+              a(href='#') Services
+            li
+              a(href='#') Contacts
+            li
+              a(href='#') About us
+            li
+              a(href='#') Testimonials
 
-            .menu-right
-              ul.social
-                li
-                  a(href='#')
-                    i.ion-social-twitter
-                li
-                  a(href='#')
-                    i.ion-social-facebook
-                li
-                  a(href='#')
-                    i.ion-social-instagram-outline
-                li
-                  a(href='#')
-                    i.ion-social-youtube
-                li
-                  a(href='#')
-                    i.ion-social-googleplus
+      .pull-right
+        ul.social
+          li
+            a(href='#')
+              i.ion-social-twitter
+          li
+            a(href='#')
+              i.ion-social-facebook
+          li
+            a(href='#')
+              i.ion-social-instagram-outline
+          li
+            a(href='#')
+              i.ion-social-youtube
+          li
+            a(href='#')
+              i.ion-social-googleplus
+              
+        .search               
+          form(method='get', action='', autocomplete='off')
+            input(placeholder='Search...', name='q', type='text')
