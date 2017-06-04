@@ -1,8 +1,6 @@
 $(document).ready(function () {
     'use strict';
 
-    $('ul.sf-menu').superfish();
-
     // generates content for sidebar-menu
     var social = '<ul class="social">' + $('ul.social').html() + '</ul>';
     var close = '<a class="back" href="#"><i class="ion-arrow-left-c"></i></a>';
@@ -19,6 +17,8 @@ $(document).ready(function () {
         $('body').removeClass('menu-open');
     });
 
+    // initializing sf menu after replicating it in sidebar menu
+    $('ul.sf-menu').superfish();
 
     $('.search .ion-close-round').click(function (e) {
         $('.search').removeClass('active');

@@ -1,0 +1,40 @@
+$post-height: 580px
+
+.grid-post
+    border-radius: 25px
+    width: 100%
+    height: inherit
+    overflow: hidden
+    &.half
+        margin-bottom: 5px
+    .bg-img
+        position: absolute
+        min-height: 100%
+        margin: auto
+        top: -50%
+        right: -50%
+        left: -50%
+        bottom: -50%
+        transform: scale(1.1)
+        transition: transform .2s ease
+    &:hover .bg-img
+        transform: scale(1)
+    .layouts
+        position: absolute
+        padding: 30px
+        bottom: 0
+    .label-default
+        color: black
+        background-color: rgb(255, 255, 255) !important
+
+.banner 
+    height: $post-height
+    padding: 0 10px
+    [class*="col-"]
+        padding: 0 5px
+        margin-bottom: 10px
+        height: inherit
+    .half
+        height: ($post-height / 2) - 5px
+        &.row
+            margin: 0 -5px

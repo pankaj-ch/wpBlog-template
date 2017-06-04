@@ -14,21 +14,29 @@ a
   color: #19191a
   position: relative
   display: inline-block
-  transition: all .1s ease-in-out
+  transition: width .1s ease-in-out
+  &::after
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 2px
+    width: 0%
+    transition: all .15s ease-in-out
   &:hover,&:active,&:focus,&.active
-    color: #19191a
     text-decoration: none
+    color: #19191a
     &::after
       width: 100%
 
-a::after
-  content: ""
-  position: absolute
-  bottom: 0
-  left: 0
-  height: 2px
-  width: 0%
-  transition: all .15s ease-in-out
+
+.label
+  font-size: 11px
+  font-weight: 700
+  padding: 3px 10px
+  border-radius: 25px 
+  text-transform: uppercase
+
 
 @media (min-width: 768px) 
   .container 
