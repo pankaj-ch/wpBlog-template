@@ -1,0 +1,25 @@
+.grid-post
+  border-radius: 25px
+  position: relative
+  width: 100%
+  height: inherit
+  overflow: hidden
+  .bg-img
+    margin: auto
+    top: -50%
+    right: -50%
+    left: -50%
+    bottom: -50%
+    min-width: 100%
+    min-height: 100%
+    height: auto
+    width: auto
+    position: absolute
+    transform: scale(1.1)
+    transition: transform .2s ease
+  &:hover .bg-img
+    transform: scale(1)
+  .label-default
+    color: black
+    background-color: rgb(255, 255, 255) !important
+

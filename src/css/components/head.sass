@@ -1,3 +1,21 @@
+$line-height: 46px
+
+header
+  a
+    transition: width .1s ease-in-out
+    &::after
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      height: 2px
+      width: 0%
+      transition: all .15s ease-in-out
+    &:hover,&:active,&:focus,&.active
+      text-decoration: none
+      &::after
+        width: 100%
+
 .head 
   padding-top: 18px
   padding-bottom: 18px
@@ -9,7 +27,6 @@
 .head-logo
   width: 240px
 .head-bookmark
-  padding: 0px 0px 0px 15px
   text-align: right
   .btn
     font-weight: 700
@@ -31,9 +48,9 @@
       font-weight: 400 
 
 .top-nav
-  margin-bottom: 20px
+  margin-bottom: 15px
   [class*="ion-"]
-    line-height: 50px
+    line-height: $line-height
     font-size: 17px
 
   ul, .search, .toggle-bar, input
@@ -51,7 +68,7 @@
   margin: 0 15px
   a
     text-transform: uppercase
-    padding: 15px 0
+    line-height: $line-height
     font-size: 14px
   a:after
     background: #2196F3
@@ -65,8 +82,8 @@
     font-family: 'Ionicons'
     font-size: 16px
     content: '\f20d'
-    margin: 0 19px
-    line-height: 50px
+    margin: 0 17px
+    line-height: $line-height
     
 .social
   margin-right: 60px
@@ -79,16 +96,16 @@
   position: absolute
   z-index: 999
   right: 15px
-  width: 50px
+  width: 46px
   overflow: hidden
   transition: width .2s ease-in-out
   .ion-close-round
-    right: 7px
+    right: 6px
     position: absolute
     cursor: pointer
     opacity: 0
     padding: 0 10px
-    line-height: 50px
+    line-height: $line-height
     text-align: center
     display: inline-block
     z-index: -22
@@ -99,8 +116,8 @@
     font-family: 'Ionicons'
     font-size: 16px
     content: '\f21f'
-    padding: 0 19px
-    line-height: 50px
+    padding: 0 17px
+    line-height: $line-height
   form
     position: absolute
     width: 280px
@@ -112,7 +129,7 @@
     transition: opacity .2s ease-in-out 
   input
     padding: 0 15%
-    line-height: 50px
+    line-height: $line-height
     cursor: pointer
     width: 100%
     color: #222
