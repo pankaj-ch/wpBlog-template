@@ -13,8 +13,8 @@ jQuery(document).ready(function () {
 
     // generates content for sidebar-menu
     var social = '<ul class="social">' + jQuery('ul.social').html() + '</ul>',
-    close = '<a class="back" href="#"><i class="ion-arrow-left-c"></i></a>',
-    menu = jQuery('#nav-main').html();
+        close = '<a class="back" href="#"><i class="ion-arrow-left-c"></i></a>',
+        menu = jQuery('#nav-main').html();
     jQuery('.sidebar-menu').html(social + menu + close);
 
     // opens sidebar-menu
@@ -38,4 +38,13 @@ jQuery(document).ready(function () {
         jQuery('.search').addClass('active');
     });
 
+    var owl = jQuery('.owl-carousel');
+    owl.owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true
+    });
 });
