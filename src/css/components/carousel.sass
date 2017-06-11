@@ -24,7 +24,6 @@
       .bg-img
         transform: scale(1)
     > .label
-      padding: .4em .6em
       position: absolute
       left: 99px
       top: -8px
@@ -39,3 +38,30 @@
       text-align: center
       position: absolute
       bottom: 8px
+
+.owl-carousel .owl-nav
+  position: absolute
+  top: -50px
+  right: -10px
+  [class*='owl-']
+    width: 30px
+    margin: 3px
+    padding: 3px 10px
+    background: #c6c6c6
+    color: transparent
+    display: inline-block
+    border-radius: 25px
+    &:hover
+      background: #cc66cc
+    &::before
+      font-family: 'Ionicons'
+      color: #FFF
+  .owl-prev::before
+    content: "\f108"
+  .owl-next::before
+    content: "\f10b"
+
+
+@media screen and (max-width: 480px)
+  .post-carousel .item h2
+    padding: 15px 25px 15px 0
