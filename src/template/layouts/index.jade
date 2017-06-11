@@ -16,29 +16,21 @@ html(lang="en")
 		link(href="https://fonts.googleapis.com/css?family=Nunito:200,400,600,700,900", rel="stylesheet")   
 		// ionicons font
 		link(href="css/ionicons.min.css", rel="stylesheet")  
-
-		block head 
-		
 		// brew stylesheet
-		link(href="css/style.min.css", rel="stylesheet")     
+		link(href="css/style.min.css", rel="stylesheet")
+		
+		// jquery 3.2.1
+		script(src="js/jquery.min.js")
+		// superfish 1.7.9
+		script(src="js/superfish.min.js")
+		// owl carousel
+		script(src="js/owl.carousel.min.js")     
     
 	body
 		.content-wrapper
 			include ./header.jade
 			block content 
 			include ./footer.jade
-		// jquery 3.2.1
-		script(src="js/jquery.min.js")
-		// bootstrap 3.3.7
-		script(src="js/bootstrap.min.js")
-		// superfish 1.7.9
-		script(src="js/superfish.min.js")
-		// owl carousel
-		script(src="js/owl.carousel.min.js")
-		
-		block script
-		
-		// bootstrap 3.3.7
+
 		script(src="js/main.min.js")
 
-		

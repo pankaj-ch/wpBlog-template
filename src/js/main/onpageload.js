@@ -1,31 +1,41 @@
-$(document).ready(function () {
+jQuery(document).ready(function () {
     'use strict';
+    //dynamically change proportions of background 
+    jQuery('.bg-img').one('load').each(function () {
+        var a = jQuery(this).width() / jQuery(this).height(),
+            b = jQuery(this).parent().width() / jQuery(this).parent().height();
+        if (a < b) {
+            jQuery(this).attr('style', 'width:100%');
+        } else {
+            jQuery(this).attr('style', 'height:100%');
+        }
+    });
 
     // generates content for sidebar-menu
-    var social = '<ul class="social">' + $('ul.social').html() + '</ul>';
-    var close = '<a class="back" href="#"><i class="ion-arrow-left-c"></i></a>';
-    var menu = $('#nav-main').html();
-    $('.sidebar-menu').html(social + menu + close);
+    var social = '<ul class="social">' + jQuery('ul.social').html() + '</ul>',
+    close = '<a class="back" href="#"><i class="ion-arrow-left-c"></i></a>',
+    menu = jQuery('#nav-main').html();
+    jQuery('.sidebar-menu').html(social + menu + close);
 
     // opens sidebar-menu
-    $('.toggle-bar').click(function () {
-        $('body').addClass('menu-open');
+    jQuery('.toggle-bar').click(function () {
+        jQuery('body').addClass('menu-open');
     });
 
     // Closes sidebar menu
-    $('.sidebar-menu .back, .overlay').click(function () {
-        $('body').removeClass('menu-open');
+    jQuery('.sidebar-menu .back, .overlay').click(function () {
+        jQuery('body').removeClass('menu-open');
     });
 
     // initializing sf menu after replicating it in sidebar menu
-    $('ul.sf-menu').superfish();
+    jQuery('ul.sf-menu').superfish();
 
-    $('.search .ion-close-round').click(function (e) {
-        $('.search').removeClass('active');
+    jQuery('.search .ion-close-round').click(function (e) {
+        jQuery('.search').removeClass('active');
         e.stopPropagation();
     });
-    $('.search').click(function () {
-        $('.search').addClass('active');
+    jQuery('.search').click(function () {
+        jQuery('.search').addClass('active');
     });
 
 });
