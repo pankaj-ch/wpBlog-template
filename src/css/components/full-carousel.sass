@@ -1,0 +1,49 @@
+.full-carousel
+  padding-left: 10px
+  margin-bottom: 30px 
+  .item
+    width: 585px
+    height: 285px 
+    &:hover h2
+      text-decoration: underline
+  .layouts
+    position: absolute
+    padding: 30px
+    bottom: 0
+  h2
+    font-weight: 700
+    line-height: 1.1em
+  p
+    line-height: 1.3em
+    font-weight: 400
+  h2, p  
+    color: white
+    margin: 10px 0 0
+    text-shadow: 0px 0px 40px rgba(0,0,0,0.22)
+  
+  .owl-nav
+    position: absolute
+    top: 30px
+    left: 30px
+    right: 30px
+    [class*='owl-']
+      width: 26px
+      padding: 3px 8px
+      background: #19191a
+      color: transparent
+      display: inline-block
+      border-radius: 25px
+      &:hover
+        background: #337AB7
+      &::before
+        font-family: 'Ionicons'
+        color: #fff
+    .owl-prev::before
+      content: "\f108"
+    .owl-next
+      float: right
+      &::before
+        content: "\f10b"
+@media screen and (max-width: 767px)
+  .full-carousel
+    display: none

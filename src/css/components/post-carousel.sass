@@ -9,6 +9,7 @@
     padding: 0
     span 
       font-size: 15px
+  
   .item
     margin: 10px 10px 0 0
     padding-right: 0
@@ -25,9 +26,12 @@
         transform: scale(1)
     > .label
       position: absolute
-      left: 99px
+      padding: .4em .6em
+      left: 108px
       top: -8px
       z-index: 1
+      transform: translatex(-50%)
+  
   .grid-post
     width: 215px
     height: 150px
@@ -39,27 +43,29 @@
       position: absolute
       bottom: 8px
 
-.owl-carousel .owl-nav
-  position: absolute
-  top: -50px
-  right: -10px
-  [class*='owl-']
-    width: 30px
-    margin: 3px
-    padding: 3px 10px
-    background: #c6c6c6
-    color: transparent
-    display: inline-block
-    border-radius: 25px
-    &:hover
-      background: #cc66cc
-    &::before
-      font-family: 'Ionicons'
-      color: #FFF
-  .owl-prev::before
-    content: "\f108"
-  .owl-next::before
-    content: "\f10b"
+  .owl-nav
+    position: absolute
+    top: -50px
+    right: -10px
+    [class*='owl-']
+      width: 24px
+      margin: 4px
+      padding: 1px 7px
+      background: #fff
+      color: transparent
+      display: inline-block
+      border-radius: 25px
+      &:hover
+        background: #337AB7
+        &::before
+          color: #fff
+      &::before
+        font-family: 'Ionicons'
+        color: #19191a
+    .owl-prev::before
+      content: "\f108"
+    .owl-next::before
+      content: "\f10b"
 
 
 @media screen and (max-width: 480px)

@@ -37,13 +37,13 @@ jQuery(document).ready(function () {
 		jQuery('.search').addClass('active');
 	});
 
-	jQuery('.owl-carousel').owlCarousel({
+	jQuery('.post-carousel .owl-carousel').owlCarousel({
 		nav: true,
 		loop: true,
 		margin: 10,
-		// autoplay: true,
-		// autoplayTimeout: 4000,
-		// autoplayHoverPause: true,
+		autoplay: true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
 		responsive: {
 			0: {
 				items: 1
@@ -56,4 +56,15 @@ jQuery(document).ready(function () {
 			}
 		}
 	});
+	if (window.innerWidth >= 768) {
+		jQuery('.full-carousel .owl-carousel').owlCarousel({
+			nav: true,
+			loop: true,
+			margin: 10,
+			autoWidth: true,
+			autoplay: true,
+			autoplayTimeout: 6000,
+			autoplayHoverPause: true
+		});
+	}
 });
