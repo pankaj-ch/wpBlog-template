@@ -4,11 +4,14 @@ block meta
 
 block content
   .container
-    include ./content/_banner-grid.jade
-    include ./content/_post-lists.jade
+    include ./content/_banner_grid.jade
+    include ./content/_post_lists.jade
     include ./content/_carousel.jade
     center
       .ad(style='margin-bottom:40px;color:#999') 
         small -- Advertisement --
   
   include ./content/_carousel_full.jade      
+  .container
+    include ./content/_post_col.jade
+    include ./content/_banner_grid.jade
