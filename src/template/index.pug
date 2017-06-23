@@ -1,0 +1,17 @@
+extends ./layouts/index.pug
+
+block meta
+
+block content
+  .container
+    include ./content/_banner_grid.pug
+    include ./content/_post_lists.pug
+    include ./content/_carousel.pug
+    center
+      .ad(style='margin-bottom:40px;color:#999') 
+        small -- Advertisement --
+  
+  include ./content/_carousel_full.pug      
+  .container
+    include ./content/_post_col.pug
+    include ./content/_banner_grid.pug

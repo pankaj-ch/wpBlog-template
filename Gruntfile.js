@@ -11,7 +11,7 @@ module.exports = function (grunt) {
                 },
                 files: [{
                     cwd: "src/template",
-                    src: ["**/*.jade", "!**/_*.jade", "!layouts/**/*.jade"],
+                    src: ["**/*.pug", "!**/_*.pug", "!layouts/**/*.pug"],
                     dest: "./dist",
                     expand: true,
                     ext: ".html"
@@ -57,7 +57,7 @@ module.exports = function (grunt) {
 
         watch: {
             html: {
-                files: ["src/**/*.jade"],
+                files: ["src/**/*.pug"],
                 tasks: ["pug"]
             },
             uglify: {

@@ -15,9 +15,6 @@
   $('.top-nav').prepend('<div class="toggle-bar"></div>');
   $('.search').append('<i class="ion-close-round"></i>');
 
-  //dynamically change proportions of background
-  imageResize();
-  $(window).resize(imageResize);
 
   // generates content for sidebar-menu
   var social = '<ul class="social">' + $('ul.social').html() + '</ul>',
@@ -45,6 +42,10 @@
   });
 
   $(document).ready(function () {
+    //dynamically change proportions of background
+    imageResize();
+    $(window).resize(imageResize);
+    
     // initializing sf menu after replicating it in sidebar menu
     $('ul.sf-menu').superfish();
     $('.post-carousel .owl-carousel').owlCarousel({
