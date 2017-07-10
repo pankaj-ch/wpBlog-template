@@ -23,9 +23,12 @@
     <header class="container">
       <div class="row">
         <div class="col-md-12 head">
-          <div class="head-logo"><a class="logo" href="#home"><img src="<?php echo get_bloginfo('template_directory'); ?>/assets/img/logo.svg" alt="Unleash Devices"></a></div>
-          <div class="head-nav hidden-sm hidden-xs"><a href="#latest">LATEST<span>Posts</span></a><a href="#popular">POPULAR<span>Posts</span></a><a href="#hot">HOT<span>Posts</span></a>
-            <a href="#trending">TRENDING<span>Posts</span></a>
+          <div class="head-logo"><a class="logo" href="/"><img src="<?php echo get_bloginfo('template_directory'); ?>/assets/img/logo.svg" alt="Unleash Devices"></a></div>
+          <div class="head-nav hidden-sm hidden-xs">
+            <a href="#">LATEST<span>Posts</span></a>
+            <a href="#">POPULAR<span>Posts</span></a>
+            <a href="#">HOT<span>Posts</span></a>
+            <a href="#">TRENDING<span>Posts</span></a>
           </div>
           <div class="head-bookmark hidden-md"><a class="btn" href="#">Bookmark Hot</a></div>
         </div>
@@ -34,7 +37,7 @@
         <div class="col-md-12 top-nav">
           <div class="hidden-sm hidden-xs" id="nav-main">
             <nav role="navigation">
-              <ul class="sf-menu">
+              <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Blog</a></li>
