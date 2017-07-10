@@ -67,7 +67,7 @@
     $(window).resize(imageResize);
 
     // initializing sf menu after replicating it in sidebar menu
-    $('ul.sf-menu').superfish();
+    // $('ul.sf-menu').superfish();
     $('.post-carousel .owl-carousel').owlCarousel({
       nav: true,
       loop: true,

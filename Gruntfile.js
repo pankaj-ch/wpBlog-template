@@ -7,7 +7,7 @@ module.exports = function (grunt) {
             compile: {
                 options: {
                     client: false,
-                    // pretty: true
+                    pretty: true
                 },
                 files: [{
                     cwd: "src/template",
@@ -26,7 +26,7 @@ module.exports = function (grunt) {
                     sourcemap: "none"
                 },
                 files: [{
-                    "dist/css/style.min.css": "src/css/style.sass"
+                    "dist/assets/css/style.min.css": "src/css/style.sass"
                 }]
             }
         },
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
                     }
                 },
                 files: [{
-                    "dist/js/main.min.js": ["src/js/main/*.js"]
+                    "dist/assets/js/main.min.js": ["src/js/main/*.js"]
                 }]
             }
         },
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: "src/img/",
                     src: ["**/*.{png,jpg,gif,svg,jpeg}"],
-                    dest: "dist/img/"
+                    dest: "dist/assets/img/"
                 }]
             }
         },
