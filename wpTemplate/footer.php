@@ -8,7 +8,9 @@
               </form>
             </div>
             <div class="col-md-4">
-              <div class="footer-nav"> <a href="#">Homepage</a><a href="#">Advertise</a><a href="#">Contact us          </a></div>
+              <div class="footer-nav"> 
+              <a href="#">Homepage</a><a href="#">Advertise</a><a href="#">Contact us</a>
+              </div>
             </div>
           </div>
           <div class="row">

@@ -37,15 +37,7 @@
         <div class="col-md-12 top-nav">
           <div class="hidden-sm hidden-xs" id="nav-main">
             <nav role="navigation">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Testimonials</a></li>
-              </ul>
+					    <?php wp_nav_menu( array( 'theme_location' => 'top', ) ); ?>
             </nav>
           </div>
           <div class="pull-right">
