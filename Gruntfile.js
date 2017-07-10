@@ -22,11 +22,10 @@ module.exports = function (grunt) {
         sass: {
             dist: {
                 options: {
-                    style: "compressed",
                     sourcemap: "none"
                 },
                 files: [{
-                    "dist/assets/css/style.min.css": "src/css/style.sass"
+                    "dist/style.css": "src/css/style.sass"
                 }]
             }
         },
